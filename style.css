@@ -48,7 +48,8 @@ body {
 /* Hero */
 .hero-image {
     min-height: 100vh;
-    background-image: url("https://github.com/fom78/cacproyecto/blob/main/images/back.svg");
+    /* background-image: url("https://github.com/fom78/cacproyecto/blob/main/images/back.svg"); */
+    background-image: url("images/back.svg");
     background-repeat: no-repeat;
     background-position: center top;
     background-size: cover;
