@@ -1,102 +1,100 @@
 :root {
-    --white: #fff;
-    --primary-color: #178395;
-    --header-height: 55px;
-  }
+  --white: #fff;
+  --primary-color: #178395;
+  --header-height: 55px;
+}
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 body {
-    font-family: Verdana, Arial, Helvetica, sans-serif;
-    font-size: 11px;
-    width: 1440px;
-    margin: auto;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  width: 1440px;
+  margin: auto;
 }
-
+/*Comentario de prueba*/
 /* Header */
 .header {
-    width: 1440px;
-    height: var(--header-height);
-    text-align: center;
-    background-color: var(--white);
-    top: 0;
-    /* z-index: 999; */
-    position: sticky;
-    border: 2px solid black;
-
-
-  }
+  width: 1440px;
+  height: var(--header-height);
+  text-align: center;
+  background-color: var(--white);
+  top: 0;
+  /* z-index: 999; */
+  position: sticky;
+  border: 2px solid black;
+}
 .nav-bar {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    /* border: 2px solid red; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* border: 2px solid red; */
 }
 
 .header nav {
-    /* padding: 1rem; */
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    font-size: 1rem;
-  }
-  .header nav a {
-    padding: 1rem;
-    border-radius: 30px;
-  }
-  .header nav a:hover {
-    background-color: var(--primary-color);
-  }
+  /* padding: 1rem; */
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 1rem;
+}
+.header nav a {
+  padding: 1rem;
+  border-radius: 30px;
+}
+.header nav a:hover {
+  background-color: var(--primary-color);
+}
 /* Hero */
 .hero-image {
-    min-height: 100vh;
-    background-image: url("images/back.svg");
-    /* width: 100%; */
-    background-repeat: no-repeat;
-    background-position: center top;
-    background-size: cover;
-    background-attachment: fixed;
-  }
-  .hero-image article {
-    width: 100%;
-    min-height: inherit;
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    text-align: center;
-    color: var(--white);
-    font-size: 38px;
-    font-weight: 700;
-    text-transform: uppercase;
-    background-color: rgba(0, 0, 0, 0.3);
-  }
+  min-height: 100vh;
+  background-image: url("images/back.svg");
+  /* width: 100%; */
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.hero-image article {
+  width: 100%;
+  min-height: inherit;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  text-align: center;
+  color: var(--white);
+  font-size: 38px;
+  font-weight: 700;
+  text-transform: uppercase;
+  background-color: rgba(0, 0, 0, 0.3);
+}
 
 /* marcador ayuda a posicionar la seccion con el desfasaje segun el navbar */
 .marcador {
   position: relative;
-  top: calc(-1*var(--header-height));
+  top: calc(-1 * var(--header-height));
 }
 
 .empresa {
-    width: 100%;
-    min-height: 70vh;
-    flex-direction: column;
-    justify-content: center;
+  width: 100%;
+  min-height: 70vh;
+  flex-direction: column;
+  justify-content: center;
 }
-.empresa article{
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+.empresa article {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
-.empresa article p{
-    font-size: 2rem;
+.empresa article p {
+  font-size: 2rem;
 }
 
 /* Clientes Realiza Fernando */
@@ -107,11 +105,11 @@ body {
   justify-content: center;
   background-color: blueviolet;
 }
-.clientes article{
+.clientes article {
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
-.clientes article p{
+.clientes article p {
   font-size: 2rem;
 }
 
@@ -122,14 +120,13 @@ body {
   flex-direction: column;
   justify-content: center;
 }
-.servicios article{
+.servicios article {
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
-.servicios article p{
+.servicios article p {
   font-size: 2rem;
 }
-
 
 /* FAQ Realiza Fernando */
 .faq {
@@ -137,14 +134,13 @@ body {
   min-height: 100vh;
   flex-direction: column;
   justify-content: center;
-  background-color:yellowgreen;
-
+  background-color: yellowgreen;
 }
-.faq article{
+.faq article {
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
-.faq article p{
+.faq article p {
   font-size: 2rem;
 }
 
@@ -155,10 +151,10 @@ body {
   flex-direction: column;
   justify-content: center;
 }
-.contactos article{
+.contactos article {
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
-.contactos article p{
+.contactos article p {
   font-size: 2rem;
 }
