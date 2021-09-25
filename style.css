@@ -1,11 +1,13 @@
 :root {
     --white: #fff;
     --primary-color: #178395;
+    --header-height: 55px;
   }
 
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 a {
@@ -15,25 +17,32 @@ a {
 body {
     font-family: Verdana, Arial, Helvetica, sans-serif;
     font-size: 11px;
+    width: 1440px;
+    margin: auto;
 }
 
 /* Header */
 .header {
-    width: 100%;
+    width: 1440px;
+    height: var(--header-height);
     text-align: center;
     background-color: var(--white);
     top: 0;
     /* z-index: 999; */
     position: sticky;
+    border: 2px solid black;
+
+
   }
 .nav-bar {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    /* border: 2px solid red; */
 }
 
 .header nav {
-    padding: 1rem;
+    /* padding: 1rem; */
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -41,6 +50,7 @@ body {
   }
   .header nav a {
     padding: 1rem;
+    border-radius: 30px;
   }
   .header nav a:hover {
     background-color: var(--primary-color);
@@ -48,8 +58,8 @@ body {
 /* Hero */
 .hero-image {
     min-height: 100vh;
-    /* background-image: url("https://github.com/fom78/cacproyecto/blob/main/images/back.svg"); */
     background-image: url("images/back.svg");
+    /* width: 100%; */
     background-repeat: no-repeat;
     background-position: center top;
     background-size: cover;
@@ -66,8 +76,14 @@ body {
     font-size: 38px;
     font-weight: 700;
     text-transform: uppercase;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.3);
   }
+
+/* marcador ayuda a posicionar la seccion con el desfasaje segun el navbar */
+.marcador {
+  position: relative;
+  top: calc(-1*var(--header-height));
+}
 
 .empresa {
     width: 100%;
@@ -81,4 +97,68 @@ body {
 }
 .empresa article p{
     font-size: 2rem;
+}
+
+/* Clientes Realiza Fernando */
+.clientes {
+  width: 100%;
+  min-height: 70vh;
+  flex-direction: column;
+  justify-content: center;
+  background-color: blueviolet;
+}
+.clientes article{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.clientes article p{
+  font-size: 2rem;
+}
+
+/* Servicios Realiza XXXXXXXXX */
+.servicios {
+  width: 100%;
+  min-height: 70vh;
+  flex-direction: column;
+  justify-content: center;
+}
+.servicios article{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.servicios article p{
+  font-size: 2rem;
+}
+
+
+/* FAQ Realiza Fernando */
+.faq {
+  width: 100%;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  background-color:yellowgreen;
+
+}
+.faq article{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.faq article p{
+  font-size: 2rem;
+}
+
+/* Contactos Realiza XXXXXXXXX */
+.contactos {
+  width: 100%;
+  min-height: 70vh;
+  flex-direction: column;
+  justify-content: center;
+}
+.contactos article{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.contactos article p{
+  font-size: 2rem;
 }
