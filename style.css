@@ -16,27 +16,29 @@ a {
 
 body {
   font-family: Verdana, Arial, Helvetica, sans-serif;
-  font-size: 11px;
-  width: 1440px;
   margin: auto;
+  width: 90rem;
 }
 /*Comentario de prueba*/
 /* Header */
 .header {
-  width: 1440px;
   height: var(--header-height);
+  background-color: #75757571;
   text-align: center;
-  background-color: var(--white);
-  top: 0;
-  /* z-index: 999; */
   position: sticky;
-  border: 2px solid black;
 }
+
+.logo {
+  height: 2.75rem;
+  width: 12.75rem;
+  padding: 0.3rem;
+}
+
 .nav-bar {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  /* border: 2px solid red; */
+  padding: 0.3rem;
 }
 
 .header nav {
@@ -53,17 +55,43 @@ body {
 .header nav a:hover {
   background-color: var(--primary-color);
 }
-/* Hero */
-.hero-image {
-  min-height: 100vh;
-  background-image: url("images/back.svg");
-  /* width: 100%; */
-  background-repeat: no-repeat;
-  background-position: center top;
-  background-size: cover;
-  background-attachment: fixed;
+
+/*Seccion Hero arranca*/
+.hero-section {
+  height: 95vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #75757571;
 }
-.hero-image article {
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 4.5rem;
+  color: #ffffff;
+}
+
+.blob {
+  height: 17rem; /*17rem = 272px*/
+  width: 14rem; /*14rem = 224px*/
+}
+
+.team {
+  height: 24.19rem; /*24rem = 387px*/
+  width: 47.125rem; /*47rem = 754px*/
+}
+
+.hero-images {
+  display: flex;
+}
+
+/*Seccion Hero termina*/
+
+/*
+.hero-section article {
   width: 100%;
   min-height: inherit;
   display: flex;
@@ -76,7 +104,7 @@ body {
   text-transform: uppercase;
   background-color: rgba(0, 0, 0, 0.3);
 }
-
+*/
 /* marcador ayuda a posicionar la seccion con el desfasaje segun el navbar */
 .marcador {
   position: relative;
