@@ -27,6 +27,7 @@ body {
   height: var(--header-height);
   background-color: #75757571;
   text-align: center;
+  top: 0;
   position: sticky;
 }
 
