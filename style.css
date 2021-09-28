@@ -12,14 +12,16 @@
 
 a {
   text-decoration: none;
+  color: black;
+  font-weight: 600;
 }
 
 body {
   font-family: Verdana, Arial, Helvetica, sans-serif;
   margin: auto;
-  width: 90rem;
+  max-width: 120rem;
 }
-/*Comentario de prueba*/
+
 /* Header */
 .header {
   height: var(--header-height);
@@ -50,7 +52,7 @@ body {
 }
 .header nav a {
   padding: 1rem;
-  border-radius: 30px;
+  border-radius: 1.87rem;
 }
 .header nav a:hover {
   background-color: var(--primary-color);
@@ -58,9 +60,10 @@ body {
 
 /*Seccion Hero arranca*/
 .hero-section {
-  height: 95vh;
+  height: 93vh;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   background-color: #75757571;
 }
 
@@ -72,6 +75,7 @@ body {
 h1 {
   font-size: 4.5rem;
   color: #ffffff;
+  margin-top: 8rem;
 }
 
 .blob {
@@ -86,25 +90,12 @@ h1 {
 
 .hero-images {
   display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
 }
 
 /*Seccion Hero termina*/
 
-/*
-.hero-section article {
-  width: 100%;
-  min-height: inherit;
-  display: flex;
-  justify-content: left;
-  align-items: center;
-  text-align: center;
-  color: var(--white);
-  font-size: 38px;
-  font-weight: 700;
-  text-transform: uppercase;
-  background-color: rgba(0, 0, 0, 0.3);
-}
-*/
 /* marcador ayuda a posicionar la seccion con el desfasaje segun el navbar */
 .marcador {
   position: relative;
