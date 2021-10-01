@@ -61,7 +61,7 @@ body {
 
 /*Seccion Hero arranca*/
 .hero-section {
-  height: 93vh;
+  height: 95vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -96,12 +96,12 @@ h1 {
 }
 
 .hero-parallax {
-  height:100vh;
-  background-image: url('images/blob.png'),url('images/hero-team.png');
-  background-position: left bottom, right bottom;/*simula hero-images*/
-  background-size: 14rem 17rem,47.125rem 24.19rem;/*dimensiones de ambas imagenes*/
-  background-repeat: no-repeat;/*la imagen de fondo no se repite tipo mosaico*/
-  background-attachment: fixed;/*fijo la imagen de fondo*/
+  height: 100vh;
+  background-image: url("images/blob.png"), url("images/hero-team.png");
+  background-position: left bottom, right bottom; /*simula hero-images*/
+  background-size: 14rem 17rem, 47.125rem 24.19rem; /*dimensiones de ambas imagenes*/
+  background-repeat: no-repeat; /*la imagen de fondo no se repite tipo mosaico*/
+  background-attachment: fixed; /*fijo la imagen de fondo*/
 }
 
 /*Seccion Hero termina*/
