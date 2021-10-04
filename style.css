@@ -1,6 +1,7 @@
 :root {
   --white: #fff;
   --primary-color: #178395;
+  --secondary-color: #050c16;
   --header-height: 55px;
 }
 
@@ -61,11 +62,12 @@ body {
 
 /*Seccion Hero arranca*/
 .hero-section {
-  height: 93vh;
+  height: 95vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   background-color: #75757571;
+  margin-bottom: 0.5rem;
 }
 
 .hero-content {
@@ -96,12 +98,12 @@ h1 {
 }
 
 .hero-parallax {
-  height:100vh;
-  background-image: url('images/blob.png'),url('images/hero-team.png');
-  background-position: left bottom, right bottom;/*simula hero-images*/
-  background-size: 14rem 17rem,47.125rem 24.19rem;/*dimensiones de ambas imagenes*/
-  background-repeat: no-repeat;/*la imagen de fondo no se repite tipo mosaico*/
-  background-attachment: fixed;/*fijo la imagen de fondo*/
+  height: 100vh;
+  background-image: url("images/blob.png"), url("images/hero-team.png");
+  background-position: left bottom, right bottom; /*simula hero-images*/
+  background-size: 14rem 17rem, 47.125rem 24.19rem; /*dimensiones de ambas imagenes*/
+  background-repeat: no-repeat; /*la imagen de fondo no se repite tipo mosaico*/
+  background-attachment: fixed; /*fijo la imagen de fondo*/
 }
 
 /*Seccion Hero termina*/
@@ -110,6 +112,64 @@ h1 {
 .marcador {
   position: relative;
   top: calc(-1 * var(--header-height));
+}
+
+.acerca {
+  margin-bottom: 0.5rem;
+  background-color: var(--secondary-color);
+}
+
+.contenido {
+  display: flex;
+}
+
+.izquierda {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: justify;
+  gap: 1.5rem;
+  margin: 2rem 1rem 1rem 1rem;
+  width: 50vw;
+}
+
+h2 {
+  color: #ffffff;
+  font-size: 2rem;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+}
+
+p {
+  color: var(--white);
+  font-size: 1rem;
+  width: 90%;
+  font-weight: 500;
+  line-height: 1.5rem;
+}
+
+.derecha {
+  background-size: cover;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50vw;
+  overflow: hidden;
+}
+
+.imagen {
+  height: 29.5rem;
+  width: 44.5rem;
+}
+
+.servicios {
+  margin-bottom: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background-color: var(--secondary-color);
 }
 
 .empresa {
@@ -141,7 +201,7 @@ h1 {
 .clientes article p {
   font-size: 2rem;
 }
-
+*/
 /* Servicios Realiza XXXXXXXXX */
 .servicios {
   width: 100%;
