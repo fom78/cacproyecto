@@ -43,6 +43,7 @@ body {
   flex-direction: row;
   justify-content: space-between;
   padding: 0.3rem;
+  background-color: grey;
 }
 
 .header nav {
@@ -111,7 +112,7 @@ h1 {
 /* marcador ayuda a posicionar la seccion con el desfasaje segun el navbar */
 .marcador {
   position: relative;
-  top: calc(-1 * var(--header-height));
+  top: calc(-1 * var(--header-height) - 10px);
 }
 
 .acerca {
@@ -192,16 +193,65 @@ p {
   min-height: 70vh;
   flex-direction: column;
   justify-content: center;
-  background-color: blueviolet;
+  background-color: #050c16;
 }
-.clientes article {
+
+.contenedor-testimonios {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 90%;
+  margin:auto;
+}
+.testimonio {
   padding-top: 1rem;
-  padding-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.clientes article p {
-  font-size: 2rem;
+.avatar {
+  width: 144px;
+  height: 144px;
+  border-radius: 100px;
 }
-*/
+.codoacodo {
+  background: url("images/logo-cac.png");
+  background-repeat: no-repeat;
+  background-size:cover ; 
+  background-position-x: -310px;
+
+}
+.google {
+  background: url("images/logo-google.png");
+  background-position-x: -80px;
+  background-position-y: -10px;
+}
+.github {
+  background: url("images/logo-github.png");
+  background-repeat: no-repeat;
+  background-size:cover ; 
+  background-position-y: -2px;
+}
+.testimonio-texto {
+  padding: 1rem .5rem;
+  color: var(--white);
+  min-height: 130px;
+  font-size: .8rem;
+  font-weight: 500;
+}
+.testimonio-compania {
+  padding: 1rem .5rem;
+  color: var(--white);
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+.testimonio-link {
+  color:var(--primary-color);
+  font-size: .6rem;
+  padding-bottom: .3rem;
+}
+.testimonio-link:hover {
+  color:red;
+}
 /* Servicios Realiza XXXXXXXXX */
 .servicios {
   width: 100%;
