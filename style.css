@@ -282,18 +282,38 @@ p {
 .faq {
   width: 100%;
   min-height: 100vh;
-  flex-direction: column;
-  justify-content: center;
   background-color: yellowgreen;
 }
-.faq article {
+
+.faq h1 {
+  margin-top: 0px;
   padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-.faq article p {
   font-size: 2rem;
+  text-align: center;
 }
 
+.pregunta {
+  display: flex;
+  flex-direction: column;
+}
+
+.pregunta-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+padding-right: 1rem;
+padding-left: 1rem;
+  border: 2px solid red;
+
+}
+.pregunta-respuesta {
+  border: 2px solid blue;
+
+}
+
+.respuesta-no-mostrar {
+  display: none;
+}
 /* Contactos Realiza XXXXXXXXX */
 .contacto {
   width: 100%;
