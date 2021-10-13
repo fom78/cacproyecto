@@ -187,13 +187,24 @@ p {
   font-size: 2rem;
 }
 
-/* Clientes Realiza Fernando */
+/* Clientes */
 .clientes {
   width: 100%;
-  min-height: 70vh;
+  min-height: 100vh;
   flex-direction: column;
   justify-content: center;
   background-color: #050c16;
+}
+
+.clientes h1 {
+
+  padding: 90px;
+  margin-top: 0px;
+  color: var(--white);
+  font-size: 3.5rem;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .contenedor-testimonios {
@@ -247,7 +258,7 @@ p {
 .testimonio-link {
   color:var(--primary-color);
   font-size: .6rem;
-  padding-bottom: .3rem;
+  padding-bottom: 1.0rem;
 }
 .testimonio-link:hover {
   color:red;
@@ -284,16 +295,50 @@ p {
 }
 
 /* Contactos Realiza XXXXXXXXX */
-.contactos {
+.contacto {
   width: 100%;
   min-height: 70vh;
   flex-direction: column;
   justify-content: center;
+  background-color: blueviolet;
+
 }
-.contactos article {
+.contacto article {
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
-.contactos article p {
+.contacto article p {
   font-size: 2rem;
+}
+
+
+/* footer */
+.footer {
+  width: 100%;
+  height: 100px;
+  display: grid;
+  padding-top: .7rem;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: #050c16;
+}
+
+.autor {
+  text-align: center;
+}
+.autor p {
+  width: 100%;
+  font-size: .8rem;
+  padding-bottom: .5rem;
+}
+
+.redes {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.icon {
+  height: 24px;
+  width: 24px;
 }
