@@ -282,7 +282,9 @@ p {
 .faq {
   width: 100%;
   min-height: 100vh;
-  background-color: yellowgreen;
+  background-color: #050c16;
+  color: var(--white);
+
 }
 
 .faq h1 {
@@ -291,28 +293,55 @@ p {
   font-size: 2rem;
   text-align: center;
 }
+.contenedor-preguntas {
+  padding-top: 1.5rem;
 
+  display: flex;
+  width: 90%;
+  margin: auto;
+  flex-direction: column;
+  gap: 1rem;
+}
 .pregunta {
   display: flex;
+  width: 100%;
   flex-direction: column;
+  border: 1px solid #1a7ce6fd ;
 }
 
 .pregunta-header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-padding-right: 1rem;
-padding-left: 1rem;
-  border: 2px solid red;
-
+  padding-right: 1rem;
+  padding-left: 1rem;
+  /* padding-bottom: 1rem; */
+  background-color: #0a498d;
+}
+.pregunta-header h1 {
+  font-size: 1.2rem;
+}
+.pregunta-header button {
+  padding: .4rem;
+  background: transparent;
+  border: transparent;
+  cursor: pointer;
+}
+.pregunta-header button>svg {
+  color: var(--white);
+  height: 30px;
+  width: 30px;
 }
 .pregunta-respuesta {
-  border: 2px solid blue;
-
+  display: none;
+  padding: 1rem;
 }
 
-.respuesta-no-mostrar {
-  display: none;
+.respuesta-mostrar {
+  display:inline
+}
+.lista-redes{
+  padding: 1rem;
 }
 /* Contactos Realiza XXXXXXXXX */
 .contacto {
