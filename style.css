@@ -31,6 +31,9 @@ body {
   top: 0;
   position: sticky;
 }
+.header .btn-menu {
+  display: none;
+}
 
 .logo {
   height: 2.75rem;
@@ -390,4 +393,107 @@ p {
 .icon {
   height: 24px;
   width: 24px;
+}
+
+/* Pantallas grandes (desktops de menos de 1200px) */
+@media (max-width: 1199.98px) {}
+
+/* Pantallas medianas (tablets de menos de 992px) */
+@media (max-width: 991.98px) {
+  h1 {
+    font-size: 3.5rem;
+    margin-top: 6rem;
+  }
+  .hero-parallax {
+    background-size: 10.5rem 12rem, 40rem 20rem; /*dimensiones de ambas imagenes*/
+  }
+  .clientes h1 {
+    font-size: 2.5rem;
+  }
+  .contenedor-testimonios {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Pantallas pequeñas (móviles en landscape de menos de 768px) */
+@media (max-width: 767.98px) {
+
+  h1 {
+    font-size: 2.5rem;
+    margin-top: 4rem;
+  }
+
+.hero-parallax {
+  background-size: 7rem 9rem, 36rem 18rem; /*dimensiones de ambas imagenes*/
+}
+
+  .header .nav-bar .nav-bar-full {
+    display: none;
+
+  }
+
+  .header .btn-menu {
+    display: inline;
+    height: 30px;
+    width: 30px;
+    margin: 6px;
+  }
+
+  .menu-mostrar {
+    display:inline !important
+  }
+
+  .header .btn-menu .menu-opciones {
+    display: none;
+    height: auto;
+    width: 150px;
+    position: absolute;
+    background-color: grey;
+    top: var(--header-height);
+    left: 0;
+  }
+  .menu-opciones nav {
+    /* padding: 1rem; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 1rem;
+  }
+  .menu-opciones nav a {
+    padding: 1rem;
+    border-radius: 1.87rem;
+  }
+  .menu-opciones nav a:hover {
+    background-color: var(--primary-color);
+  }
+
+  .faq h1 {
+    font-size: 1.5rem;
+  }
+  .pregunta-header h1 {
+    font-size: .9rem;
+    padding-bottom: 5px;
+  }
+
+  .contenedor-testimonios {
+    grid-template-columns: 1fr 1fr;
+  }
+  .clientes h1 {
+    font-size: 2rem;
+  }
+ 
+}
+/* Pantallas muy pequeñas (móviles en portrait de menos de 576px) */
+
+@media (max-width: 575.98px) {
+  .hero-parallax {
+    background-size: 4rem 6rem, 20rem 9rem; /*dimensiones de ambas imagenes*/
+  }
+  .clientes h1 {
+    font-size: 1.5rem;
+  }
+  .contenedor-testimonios {
+    grid-template-columns: 1fr;
+  }
 }

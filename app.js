@@ -16,3 +16,9 @@ for (let i = 0; i < preguntas.length; i++) {
     boton[i].innerHTML=plus // inicialmente todos en "+"
     boton[i].addEventListener("click",()=>toggle(i))
 }
+
+const menu = document.getElementById('btn-menu')
+const opciones = document.getElementById("menu-opciones")
+console.log('eeee',opciones);
+
+menu.addEventListener('click',()=>opciones.classList.toggle("menu-mostrar"))
