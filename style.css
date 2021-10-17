@@ -347,22 +347,289 @@ p {
   padding: 1rem;
 }
 /* Contactos Realiza XXXXXXXXX */
-.contacto {
+.section-book {
+  padding: 0;
+  background-color: #fff;
+}
+
+.book {
+  height: 36rem;
   width: 100%;
-  min-height: 70vh;
-  flex-direction: column;
-  justify-content: center;
-  background-color: blueviolet;
+  border-radius: 3px;
+  box-shadow: 0 0.93rem 2.5rem rgba(0, 0, 0, 0.3);
+  background-image: linear-gradient(to right, rgba(238, 238, 238, 0.99), rgba(247, 247, 247, 0.8)); 
+}
+  
+.book__form {
+  float: left;
+  height: 100%;
+  width: 40%;
+  padding: 2.75rem; 
+}
 
+@media only screen and (max-width: 35.15em) {
+  .book__form {
+    padding: 2.75rem 6.25rem;
+    width: 100%; 
+  } 
 }
-.contacto article {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+
+@media only screen and (max-width: 23.43em) {
+  .book__form {
+    padding: 2.75rem 6.25rem;
+    width: 100%; 
+  } 
 }
-.contacto article p {
+
+.book__picture {
+  float: right;
+  height: 100%;
+  width: 60%;
+  background-size:contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(images/hero-team.png);
+  transition: all .5s; 
+}
+    
+@media only screen and (max-width: 35.15em) {
+  .book__picture {
+    display: none; 
+  } 
+}
+  
+.book:hover .book__picture {
+  filter: brightness(80%); 
+  
+}
+
+.u-margin-bottom-medium {
+  margin-bottom: 1.5rem; 
+} 
+
+.u-margin-bottom-small {
+  margin-bottom: 1.56rem; 
+}
+
+
+.heading-secondary {
   font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  background-image: linear-gradient(to right, #68c4d4, #55a3b1);
+  display: inline-block;
+  -webkit-background-clip: text;
+  color: transparent;
+  letter-spacing: .15rem;
+  transition: all .25s; 
+}
+  
+@media only screen and (max-width: 35.15em) {
+  .heading-secondary {
+    font-size: 1.8rem; 
+  } 
 }
 
+  
+@media only screen and (max-width: 23.43em) {
+  .heading-secondary {
+    font-size: 1.6rem;
+    letter-spacing: 0;
+    padding: 0;
+    margin-left: -2rem; 
+  } 
+}
+
+  
+.heading-secondary:hover {
+  transform: skewx(-8deg) skewy(-0.9deg) scale(1.08);
+  text-shadow: 0.5rem 0.1rem 0.2rem rgba(0, 0, 0, 0.09); 
+}
+    
+@media only screen and (max-width: 23.43em) {
+  .heading-secondary:hover {
+    transform: skewx(-4deg) skewy(-0.45deg) scale(1.04);
+  } 
+}
+
+.form__group:not(:last-child) {
+  margin-bottom: 1.25rem; 
+}
+
+.form__input {
+  font-family: inherit;
+  font-size: .93rem;
+  color: inherit;
+  padding: 0.93rem 0.62rem;
+  border-radius: 3px;
+  background-color: rgba(119, 119, 119, 0.09);
+  border: 0.25rem solid transparent;
+  width: 100%;
+  display: block;
+  transition: all .4s; 
+}
+
+  
+@media only screen and (max-width: 35.15em) {
+  .form__input {
+    width: 100%; 
+  } 
+}
+  
+.form__input:focus {
+  outline: none;
+  box-shadow: 0 0.62rem 1.25rem rgba(0, 0, 0, 0.09);
+  border: 0.25rem solid #ff7730; 
+}
+  
+.form__input:focus:invalid {
+    border: 0.25rem solid #ff7730; 
+}
+
+.form__input:focus:valid {
+  border: 0.25rem solid #28b485; 
+}
+  
+.form__input::-webkit-input-placeholder {
+  color: #999; 
+}
+
+.form__label {
+  font-family: inherit;
+  font-size: 0.93rem;
+  padding-left: 0.87rem;
+  font-weight: 700;
+  margin-top: .43rem;
+  display: block;
+  transition: all .5s; 
+}
+
+.form__input:placeholder-shown + .form__label {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-2.5rem); 
+}
+
+.form__radio-group {
+  width: 49%;
+  display: inline-block; 
+}
+  
+@media only screen and (max-width: 59em) {
+  .form__radio-group {
+    width: 100%;
+    margin-bottom: 1rem; 
+  } 
+}
+  
+@media only screen and (max-width: 23.43em) {
+  .form__radio-group {
+    width: 100%;
+    margin-bottom: 1rem; 
+  } 
+}
+
+.form__radio-input {
+  display: none; 
+}
+
+.form__radio-label {
+  font-size: 1rem;
+  cursor: pointer;
+  position: relative;
+  padding-left: 1.56rem; 
+}
+
+.form__radio-button {
+  height: 1.25rem;
+  width: 1.25rem;
+  border: 4px solid #55c57a;
+  border-radius: 50%;
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: 0; 
+}
+
+.form__radio-button::after {
+  content: "";
+  display: block;
+  height: 0.62rem;
+  width: 0.62rem;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--primary-color);
+  opacity: 0;
+  transition: all .2s; 
+}
+
+.form__radio-input:checked ~ .form__radio-label .form__radio-button::after {
+  opacity: 1; 
+}
+
+.btn, .btn:link, .btn:visited  {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 0.93rem 2rem;
+  display: inline-block;
+  /*Margins and Paddings are respected*/
+  border-radius: 6.25rem;
+  transition: all 0.3s;
+  /*This is the initial state for the transform animation on hover and active states*/
+  position: relative;
+  /*This is the reference for the absolute position of the after pseudo class*/
+  font-size: 1rem;
+  border: none;
+  cursor: pointer; 
+}
+
+.btn--blue {
+  background-color: var(--primary-color);
+  color: #fff; 
+}
+
+.btn:hover {
+  transform: translateY(-1.5px);
+  /*It moves up*/
+  box-shadow: 0 0.62rem 1.25rem rgba(0, 0, 0, 0.3);
+  /*Offsetx, y, blur, color and opacity*/
+  /*Nested inside btn:hover. When we hover, apply the following styles on the after pseudo element:*/ 
+}
+
+  .btn:hover::after {
+  transform: scaleX(1.4) scaleY(1.8);
+  /*It gets bigger*/
+  opacity: 0;
+  /*So when it gets bigger also fades out*/ 
+}
+
+.btn:active, .btn:focus {
+  outline: none;
+  transform: translateY(-0.5px);
+  /*It moves down from the reference*/
+  box-shadow: 0 0.31rem 0.62rem rgba(0, 0, 0, 0.4);
+  /*Offsetx, y, blur, color and opacity*/ 
+}
+
+.btn::after {
+  /*Specify the content and display so the element appears*/
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 6.25rem;
+  position: absolute;
+  /*This is to hide the "new btn" behind the real button*/
+  top: 0;
+  /*This absolute positioning has its reference on the first element with relative positioning, in this case, the btn class, so we can hide it behind*/
+  left: 0;
+  z-index: -1;
+  /*Defines the position when 2 elements are on top of another. I want this to be behind*/
+  transition: all .4s; 
+}
 
 /* footer */
 .footer {
