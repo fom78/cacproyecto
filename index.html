@@ -14,13 +14,13 @@
     <header class="header">
         <div class="nav-bar">
             <div class="btn-menu" id="btn-menu">
-                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars" class="svg-inline--fa fa-bars"
-                    role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars"
+                    class="svg-inline--fa fa-bars" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                     <path fill="currentColor"
                         d="M416 224H31.1C14.33 224 0 238.3 0 256s14.33 32 31.1 32h384C433.7 288 448 273.7 448 256S433.7 224 416 224zM416 384H31.1C14.33 384 0 398.3 0 415.1S14.33 448 31.1 448h384C433.7 448 448 433.7 448 416S433.7 384 416 384zM416 64H31.1C14.33 64 0 78.33 0 95.1S14.33 128 31.1 128h384C433.7 128 448 113.7 448 96S433.7 64 416 64z">
                     </path>
                 </svg>
-                <div class="menu-opciones" id="menu-opciones" >
+                <div class="menu-opciones" id="menu-opciones">
                     <nav>
                         <a href="#acerca">Empresa</a>
                         <a href="#servicios">Servicios</a>
@@ -39,7 +39,7 @@
                 <a href="#contacto">Contacto</a>
             </nav>
         </div>
-        
+
 
     </header>
     <main>
@@ -200,14 +200,61 @@
 
         </section>
         <a class="marcador" name="contacto"></a>
-        <section class="contacto">
-            <article>
-                <p>
-                    Contacto
-                    realiza: XXXXXXX
-                </p>
-            </article>
+        <!--Sección de contacto comienza-->
+        <section id="book" class="section-book">
+            <div class="row">
+                <div class="book">
+                    <!--Form styled as a component-->
+                    <div class="book__form">
+                        <form action="#" class="from">
+                            <!--Heading-->
+                            <div class="u-margin-bottom-medium">
+                                <h2 class="heading-secondary">
+                                    Ponte en Contacto
+                                </h2>
+                            </div>
+                            <!--Name input-->
+                            <div class="form__group">
+                                <input type="text" class="form__input" placeholder="Full name..." required id="name">
+                                <label for="name" class="form__label">Nombre completo</label>
+                            </div>
+                            <!--Email input-->
+                            <div class="form__group">
+                                <input type="email" class="form__input" placeholder="Email address..." required
+                                    id="email">
+                                <label for="email" class="form__label">Email</label>
+                            </div>
+                            <!--Radio buttons on the form-->
+                            <div class="form__group">
+                                <div class="form__radio-group">
+                                    <input type="radio" id="small" class="form__radio-input" name="size">
+                                    <label for="small" class="form__radio-label">
+                                        <span class="form__radio-button"></span>
+                                        Landing page
+                                    </label>
+                                </div>
+
+                                <div class="form__radio-group u-margin-bottom-small">
+                                    <input type="radio" id="large" class="form__radio-input" name="size">
+                                    <label for="large" class="form__radio-label">
+                                        <span class="form__radio-button"></span>
+                                        Ecommerce
+                                    </label>
+                                </div>
+                            </div>
+
+                            <!--Submit button for the form on button components-->
+                            <div class="form__group">
+                                <button class="btn btn--blue">Enviar! &rarr;</button>
+                            </div>
+                        </form>
+                    </div>
+                    <!--Picture displayed on the form component-->
+                    <div class="book__picture">&nbsp;</div>
+                </div>
+            </div>
         </section>
+        <!--Sección de contacto termina-->
     </main>
     <footer class="footer">
         <!-- Lautaro -->
