@@ -71,7 +71,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   background-color: #75757571;
-  margin-bottom: 0.5rem;
+  /* margin-bottom: 0.5rem; */
 }
 
 .hero-content {
@@ -119,7 +119,7 @@ h1 {
 }
 
 .acerca {
-  margin-bottom: 0.5rem;
+  /* margin-bottom: 0.5rem; */
   background-color: var(--secondary-color);
 }
 
@@ -168,7 +168,7 @@ p {
 }
 
 .servicios {
-  margin-bottom: 0.5rem;
+  /* margin-bottom: 0.5rem; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -217,7 +217,7 @@ p {
   margin:auto;
 }
 .testimonio {
-  padding-top: 1rem;
+  padding-top: 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -254,6 +254,7 @@ p {
 }
 .testimonio-compania {
   padding: 1rem .5rem;
+  padding-bottom: 2rem;
   color: var(--white);
   font-size: 1.2rem;
   font-weight: 700;
@@ -762,5 +763,10 @@ p {
   }
   .contenedor-testimonios {
     grid-template-columns: 1fr;
+  }
+  .footer {
+    grid-template-columns: 1fr;
+    height: 300px;
+
   }
 }
