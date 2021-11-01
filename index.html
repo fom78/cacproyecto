@@ -97,7 +97,7 @@
         </section>
         <a class="marcador" name="clientes"></a>
         <section class="clientes">
-            <h1>Nuestro principales clientes</h1>
+            <h2>Nuestro principales clientes</h2>
             <article class="contenedor-testimonios">
                 <div class="testimonio">
                     <img class="avatar codoacodo"></img>
@@ -180,20 +180,27 @@
                 </div>
                 <div class="pregunta">
                     <div class="pregunta-header">
-                        <h1>¿ Pregunta 4 ?</h1>
+                        <h1>¿ Ustedes son realmente los mejores ?</h1>
                         <button id="pregunta-3" value="1"></button>
                     </div>
                     <div class="pregunta-respuesta" id="respuesta-3">
-                        Respuesta a la pregunta 4
+                        En efecto, eso es lo que nuestros clientes manifiestan. :X
                     </div>
                 </div>
                 <div class="pregunta">
                     <div class="pregunta-header">
-                        <h1>¿ Pregunta 5 ?</h1>
+                        <h1>¿ Cuales son los planes de pagos ?</h1>
                         <button id="pregunta-4" value="1"></button>
                     </div>
                     <div class="pregunta-respuesta" id="respuesta-4">
-                        Respuesta a la pregunta 5
+                        Puede optar por pagar en un pago o hasta en 12 cuotas.
+                        Y los medios ue actualmente disponemos son: 
+                        <ul class="lista-redes">
+                             <li>Debito</li>
+                            <li>Credito</li>
+                            <li>Mercado Pago</li>
+                            <li>Transferencia Bancaria</li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -245,7 +252,12 @@
 
                             <!--Submit button for the form on button components-->
                             <div class="form__group">
-                                <button class="btn btn--blue">Enviar! &rarr;</button>
+                                <button class="btn btn--blue" id="btnModal">Enviar! &rarr;</button>
+                                <div id="tvesModal" class="modalContainer">
+                                    <div class="modal-content">
+                                    <span class="close">×</span> <h2 id="tituloContacto">Gracias</h2>
+                                    <p id="leyendaContacto">Pronto nuestro equipo se estara contactando con usted, para programar la primer reunion.</p> </div>
+                                </div> 
                             </div>
                         </form>
                     </div>
