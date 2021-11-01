@@ -19,6 +19,48 @@ for (let i = 0; i < preguntas.length; i++) {
 
 const menu = document.getElementById('btn-menu')
 const opciones = document.getElementById("menu-opciones")
-console.log('eeee',opciones);
 
 menu.addEventListener('click',()=>opciones.classList.toggle("menu-mostrar"))
+
+
+// Funcionamineto del Modal
+let btn = document.getElementById("btnModal");
+let btnCerrar = document.getElementsByClassName("close")[0];
+let modal = document.getElementById("tvesModal");
+let body = document.getElementsByTagName("body")[0];
+
+
+let leyendaContacto = document.getElementById("leyendaContacto")
+let tituloContacto = document.getElementById("tituloContacto")
+
+btn.addEventListener("click",()=>{
+    const nombre = document.getElementById("name").value
+    const email = document.getElementById("email").value
+    if (nombre === "" || email === "" ){
+        tituloContacto.innerHTML = "<span style='color:red;'>Error</span>"
+        leyendaContacto.innerHTML = "<span>Debes ingresar un nombre y un correo electronico para que podamos contactarte.</span> "
+    } else {
+        tituloContacto.innerHTML = "Gracias !"
+        leyendaContacto.innerHTML = "<span>Pronto nuestro equipo se estara contactando con usted, para programar la primer reunion.</span> "
+    }
+    modal.style.display = "block";
+    body.style.position = "static";
+    body.style.height = "100%";
+    body.style.overflow = "hidden";
+})
+
+btnCerrar.addEventListener("click",()=>{
+    modal.style.display = "none";
+    body.style.position = "inherit";
+    body.style.height = "auto";
+    body.style.overflow = "visible";
+})
+
+window.addEventListener("click",(event)=>{
+    if (event.target == modal) {
+        modal.style.display = "none";
+        body.style.position = "inherit";
+        body.style.height = "auto";
+        body.style.overflow = "visible";
+    }
+})
