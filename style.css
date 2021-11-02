@@ -820,9 +820,27 @@ p {
 /* Pantallas muy pequeñas (móviles en portrait de menos de 576px) */
 
 @media (max-width: 575.98px) {
-  .hero-parallax {
-    background-size: 4rem 6rem, 20rem 9rem; /*dimensiones de ambas imagenes*/
+  
+  /*Seccion Hero arranca*/
+  .hero-section {
+    height: 90%;
+    width: auto;
   }
+
+  .hero-parallax {
+    height: 91.8vh;
+    background-image: url("images/hero-team.png");
+    background-position: bottom; /*simula hero-images*/
+    background-size: 22rem 15rem; /*dimensiones de ambas imagenes*/
+    background-repeat: no-repeat; /*la imagen de fondo no se repite tipo mosaico*/
+    background-attachment: fixed; /*fijo la imagen de fondo*/
+  }
+  
+  h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  
 
   .izquierda {
     align-items: center;
@@ -862,6 +880,7 @@ p {
   .btn, .btn:link, .btn:visited  {
     padding: 0.5rem .9rem;
     margin: .5rem 0 .5rem 0;
+    font-size: .8rem;
   }
 
   .clientes h1 {
