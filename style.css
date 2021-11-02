@@ -823,6 +823,47 @@ p {
   .hero-parallax {
     background-size: 4rem 6rem, 20rem 9rem; /*dimensiones de ambas imagenes*/
   }
+
+  .izquierda {
+    align-items: center;
+    text-align: justify;
+    gap: 0;
+    margin: 0;
+    padding: 1rem;
+    width: 100%;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+    padding-bottom: .9rem;
+    text-align: center;
+  }
+  
+  p {
+    font-size: 1rem;
+    width: 100%;
+    line-height: 1.5rem;
+    text-align: center;
+    padding-bottom: 1rem;
+  }
+  
+  .derecha {
+    background-size: auto;
+    margin:.1rem;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .imagen {
+    height: auto;
+    width: 100%; /*44.5rem;*/
+  }
+
+  .btn, .btn:link, .btn:visited  {
+    padding: 0.5rem .9rem;
+    margin: .5rem 0 .5rem 0;
+  }
+
   .clientes h1 {
     font-size: 1.5rem;
   }
@@ -835,3 +876,4 @@ p {
 
   }
 }
+
